@@ -32,4 +32,15 @@ public class Product {
     @LastModifiedDate
     @Column(nullable = false)
     private LocalDateTime updatedAt;
+
+    public Product() {
+    }
+
+    public Product(String name, String description, double price, CategoryThree categoryThree) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.categoryThree = categoryThree;
+    }
+
 }
